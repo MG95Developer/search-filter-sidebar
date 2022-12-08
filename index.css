@@ -46,12 +46,20 @@ div#filter-options{
 }
 
 div.filter-options_input{
-    margin-bottom: 25px;
+    max-width: 1640px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 div.filter-options_input input {
     padding: 1em;
     width: 100%;
+    min-width: 450px;
+    max-width: 600px;
 }
 
 div#filter-options{
@@ -72,7 +80,7 @@ div.filter-options_categories{
     margin-bottom: 15px;
 }
 
-input.priceRange{
+input#priceRange{
     margin-left: 10px;
     margin-bottom: 1.5em;
 }
@@ -149,8 +157,11 @@ p.product-price{
 footer{
     padding: 4em 1em;
     text-align: center;
+    margin-top: 1em;
+    background-color: lightgray;
 }
 
 footer p {
     font-weight: bold;
+    padding: .5em 0;
 }

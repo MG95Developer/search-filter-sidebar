@@ -1,9 +1,1 @@
-import IMG1 from './images/1.jpeg';
-import IMG2 from './images/2.jpeg';
-import IMG3 from './images/3.jpeg';
-import IMG4 from './images/4.jpeg';
-import IMG5 from './images/5.jpeg';
-import IMG6 from './images/6.jpeg';
-import IMG7 from './images/7.jpeg';
-import IMG8 from './images/8.jpeg';
-import IMG9 from './images/9.jpeg';
+

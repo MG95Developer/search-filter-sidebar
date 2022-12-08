@@ -1,3 +1,77 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     font-family: 'Rubik', sans-serif;
+}
+
+#main{
+    max-width: 1640px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+div#filter-options{
+    background-color: rgb(232, 225, 225);
+    margin: 10px 0;
+}
+
+div.filter-options_input{
+    margin-bottom: 25px;
+}
+
+div.filter-options_categories{
+    margin-bottom: 15px;
+}
+
+div.filter-options_categories h1, .filter-options_price h1{
+    font-size: 20px;
+    padding: 1em .5em;
+}
+
+div.results{
+    padding: 1em .5em;
+}
+
+
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color:whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5PX;
+  }
+  
+#myBtn:hover {
+    background-color: black;
+}
+
+footer{
+    padding: 4em 1em;
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
 }

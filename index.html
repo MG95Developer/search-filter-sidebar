@@ -17,7 +17,38 @@
 
     <body>
         <!-- MAIN CONTENT -->
-
+        <main id="main">
+            <div id="filter-options">
+    
+                <div class="filter-options_input">
+                    <input type="text" placeholder="Pesquisar um produto..." id="search" />
+                </div>
+    
+                <div>
+                    <div class="filter-options_categories">
+                        <h1>Filtrar produtos por Categoria</h1>
+                        <div class="categories">
+                            <!-- USING DOM TO DISPLAY THE INDIVIDUAL PRODUCT CATEGORIES -->
+                        </div>
+                    </div>
+    
+                    <div class="filter-options_price">
+                        <h1>Filtrar produtos por Preço</h1>
+                        <div>
+                          <input type="range" id="priceRange" />
+                          <span id="priceValue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div id="products">
+                    <!-- USING DOM TO DISPLAY THE INDIVIDUAL PRODUCTS -->
+                </div>
+            </div>
+        </main>
+    
 
         <!-- FOOTER -->
         <footer>

@@ -44,5 +44,52 @@ searchInput.addEventListener('keyup', (e) => {
 });
 
 // DISPLAY PRODUCT CATEGORIES
+const setCategories = () => {
+	const allCats = data.map((item) => item.category);
+	const categories = [
+		'TODAS',
+		...allCats.filter((item, i) => {
+			return allCats.indexOf(item) === i;
+		}),
+	];
+
+	categoriesContainer.innerHTML = categories
+		.map(
+			(category) =>
+				`
+      <span class="product-category">${category}</span>
+    `
+		)
+		.join('');
+
+	categoriesContainer.addEventListener('click', (e) => {
+		const selectedCategory = e.target.textContent;
+
+		selectedCategory === 'TODAS'
+			? displayProducts(data)
+			: displayProducts(
+					data.filter((item) => item.category === selectedCategory)
+			  );
+	});
+};
+
+setCategories();
 
 // PRICE RANGE FILTER
+const setPrices = () => {
+	const priceList = data.map((item) => item.price);
+	const minPrice = Math.min(...priceList);
+	const maxPrice = Math.max(...priceList);
+
+	priceRange.min = minPrice;
+	priceRange.max = maxPrice;
+	priceRange.value = maxPrice;
+	priceAmount.textContent = '€' + maxPrice;
+
+	priceRange.addEventListener('input', (e) => {
+		priceAmount.textContent = '€' + e.target.value;
+		displayProducts(data.filter((item) => item.price <= e.target.value));
+	});
+};
+
+setPrices();

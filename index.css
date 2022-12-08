@@ -50,17 +50,13 @@ div.filter-options_input{
 }
 
 div.filter-options_input input {
-    width: 100%;
     padding: 1em;
+    width: 100%;
 }
 
 div#filter-options{
     background-color: rgb(232, 225, 225);
     margin: 10px 0;
-}
-
-div.filter-options_input{
-    margin-bottom: 25px;
 }
 
 div.filter-options_categories{
